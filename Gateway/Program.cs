@@ -27,8 +27,7 @@ namespace Gateway
                         .AddJsonFile("appsettings.json", true, true)
                         .AddJsonFile($"appsettings.{hostingContext.HostingEnvironment.EnvironmentName}.json", true, true)
                         .AddJsonFile("ocelot.json")
-                        .AddJsonFile("ocelot.service.json")
-                        .AddJsonFile("ocelot.session.json")
+                        
                         .AddEnvironmentVariables();
                 })
                 .ConfigureWebHostDefaults(webBuilder =>
