@@ -15,13 +15,13 @@ curl -X POST "http://localhost:5002/api/Auth/Auth" -H "accept: */*" -H "Content-
 **Get request with cashe and rate limit**
 
 ```
-curl -X GET "http://localhost:5000/api/WeatherForecast" -H "accept: text/plain" -H "Authorization: Bearer <PUT HERE SESSUIN TOKEN>"
+curl -X GET "http://localhost:5002/api/service/WeatherForecast" -H "accept: text/plain" -H "Authorization: Bearer <PUT HERE SESSUIN TOKEN>"
 ```
 
 **Get request rate limit**
 
 ```
-curl -X GET "http://localhost:5000/api/WeatherForecast/id" -H "accept: text/plain" -H "Authorization: Bearer <PUT HERE SESSUIN TOKEN>"
+curl -X GET "http://localhost:5002/api/service/WeatherForecast/id" -H "accept: text/plain" -H "Authorization: Bearer <PUT HERE SESSUIN TOKEN>"
 ```
 
 Configuration of gateway keep in json format: [ocelot.json](https://github.com/swisschain/Example.ApiGateway/blob/master/Gateway/ocelot.json)
